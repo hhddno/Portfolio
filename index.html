@@ -23,7 +23,7 @@
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Hugo</a>
+            <a class="navbar-brand" href="#about"><i class='uil uil-user'></i> Hugo</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,15 +34,14 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
+                
                     <li class="nav-item">
-                        <a href="#about" class="nav-link"><span data-hover="A propos">A propos</span></a>
-                    </li>
+                      <a href="#resume" class="nav-link"><span data-hover="Parcours">Parcours</span></a>
+                  </li>
                     <li class="nav-item">
                         <a href="#project" class="nav-link"><span data-hover="Projets">Projets</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link"><span data-hover="Mon parcours">Mon parcours</span></a>
-                    </li>
+                 
                     
                   <li class="nav-item">
                     <a href="#veille" class="nav-link"><span data-hover="Veille technologique">Veille technologique</span></a>
@@ -76,12 +75,11 @@
                     <div class="about-text">
                         <small class="small-text">Bienvenue sur <span class="mobile-block">mon portfolio !</span></small>
                         <h1 class="animated animated-text">
-                  
-                            <span class="mr-2">Bonjour, je suis</span>
+                            <span class="mr-2">Bonjour, je suis </span>
                                 <div class="animated-info">
-                                    <span class="animated-item">DAVION Hugo</span>
-                                    <span class="animated-item">Etudiant</span>
                                     <span class="animated-item">Hugo DAVION</span>
+                                    <span class="animated-item">Étudiant</span>
+                                    <span class="animated-item">Dévelopeur</span>
                                 </div>
                         </h1>
 
@@ -89,7 +87,7 @@
                           Mes années passées en informatique m'ont permis d'acquérir la maîtrise de plusieurs langages tels que le C#, le PHP, le SQL etc. </p>
                         
                         <div class="custom-btn-group mt-4">
-                          <a target='_blank' href="https://github.com/hhddno/Portfolio/tree/main" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Mes documents </a>
+                          <a target='_blank' href="https://github.com/hhddno/Documents/tree/main" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Mes documents </a>
                           <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contactez moi</a>
                         </div>
                     </div>
@@ -105,10 +103,13 @@
         </div>
     </section>
 
-
-    
-    <!-- PARCOURS-->
-    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+<!-- End of Page Header -->
+    <!-- PARCOURS-->            <div class="section" id="resume">
+              <div class="section-title">
+                <h2>Mon parcours</h2>
+            </div>
+          </div>
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" >
       <div class="container">
           <div class="row">
 
@@ -216,67 +217,90 @@
       </div>
   </section>
 
-
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
-
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Projets réalisés durant mes années de BTS SIO</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <a target='_blank'href="https://github.com/hhddno/StageM1/tree/main"> <img src="images/project/project-image01.png" class="img-fluid" alt="project image"> </a>
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-                      </div>
-
+ <!-- Portfolio section -->
+ <section id="portfolio" class="section">
+  <div class="container text-center">
+    <div class="section" id="project">
+      <div class="section-title">
+          <h2>Mes projets</h2>
+      </div>
+    </div>
+  <br><br>
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="img-wrapper">
+                <img src="images/project/maintena.png" class="img-fluid" alt="project image">
+                <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Stage de 1ère année de BTS SIO chez MiPih</h5>
+                      </div>  
                   </div>
-                </div>
-        </div>
-    </section>
+              </div>
+              <div class="img-wrapper">
+                  <img src="images/project/atari.png" alt="">
+                  <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Remaster d'un jeu Atari : Combat Atari</h5>
+                      </div>                              
+                  </div>
+              </div>                  
+          </div>
+          <div class="col-sm-4">
+              <div class="img-wrapper">
+                  <img src="images/project/soon.png" alt="">
+                  <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Site Web d'agence immobilière</h5>
+                      </div>  
+                  </div>
+              </div>
+              <div class="img-wrapper">
+                  <img src="images/project/arbre.png" alt="">
+                  <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Logiciel de gestion d'arbre géanalogique</h5>
+                      </div>                              
+                  </div>
+              </div>                  
+          </div>
+          <div class="col-sm-4">
+              <div class="img-wrapper">
+                  <img src="images/project/soon.png" alt="">
+                  <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Site web de gestion de livres</h5>
+                      </div>  
+                  </div>
+              </div>
+              <div class="img-wrapper">
+                  <img src="images/project/soon.png" alt="">
+                  <div class="overlay">
+                      <div class="overlay-infos">
+                          <h5>Special : </h5>
+                      </div>                              
+                  </div>
+              </div>                  
+          </div>
+      </div>
 
+  </div>
+</section>
+<!-- End of portfolio section -->
 
  <!-- VEILLE TECHNOLOGIQUE -->
    
-       
-   
- <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="veille">
+      
+ <section class="about full-screen d-lg-flex justify-content-center align-items-center" >
   <div class="container">
-    
-    <center> <h2>Veille technologique</h2></center>
+    <div class="section" id="veille">
+      <div class="section-title">
+          <h2>Veille technologique</h2>
+      </div>
+    </div>
+
       <div class="row">
-          <!-- Colonne des encadrés de veille -->
-          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+          <!-- Colonne des encadrés de veille --><div class="about-text d-flex justify-content-center align-items-center">
+ 
               <div class="about-text">
                   <!-- ... Votre contenu précédent ... -->
 
@@ -286,7 +310,8 @@
                           <img src="images/undraw/ggl.png" alt="Image 1">
                       </div>
                       <div class="text-box">
-                          <h7>La veille technologique par Google Alerts</h7>
+                      
+                          <h7>Google Alerts</h7>
                           <p>
                               Google Alertes est un outil de surveillance très pratique et facile d'utilisation.
                               Il permet à tout propriétaire de site internet d'être alerté régulièrement dès qu'un mot-clé qu'il utilise ou qu'il a sélectionné est utilisé par un autre site.
@@ -299,8 +324,8 @@
                       <div class="image-box">
                           <img src="images/undraw/nwsl.png" alt="Image 2">
                       </div>
-                      <div class="text-box">
-                          <h7>La veille technologique par les newsletters</h>
+                      <div class="text-box">   <br>   <br>  
+                          <h7>Les newsletters</h>
                           <p>
                               Une newsletter est un outil de communication qui permet à une entreprise de diffuser largement des informations relatives à son activité via e-mail.
                               Elle s'adresse à une liste de destinataires qui souscrivent à l'envoi d'e-mails marketing volontairement, et qui reçoivent alors régulièrement ces mails.
@@ -313,8 +338,8 @@
                       <div class="image-box">
                           <img src="images/undraw/rs.png" alt="Image 3">
                       </div>
-                      <div class="text-box">
-                          <h7>La veille technologique par les réseaux sociaux</h7>
+                      <div class="text-box">   <br>   <br>
+                          <h7>Les réseaux sociaux</h7>
                           <p>
                               La veille des réseaux sociaux consiste à suivre les mentions d’un sujet spécifique – une marque, un produit, un marché, une tendance – sur Internet.
                               Les outils de veille des réseaux sociaux vous donnent la possibilité de veiller sur les principaux réseaux sociaux comme Facebook, Twitter, Instagram, YouTube, mais aussi les forums, les blogs, les sites d’avis consommateurs ainsi que les sites de presse.
@@ -324,23 +349,23 @@
               </div>
           </div>
 
-        
       </div>
   </div>
 </section>
-
 <!-- freelance section -->
-
-<section class="freelance_section " id="gestion">
+<div class="section" id="gestion">
+  <div class="section-title">
+      <h2>Gestion de patrimoine</h2>
+  </div>
+</div>
+<section class="freelance_section " >
   <div id="accordion">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 offset-md-1">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                Gestion de patrimoine
-              </h2>
+            
             </div>
             <div class="tab_container">
               <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -413,7 +438,12 @@
 
 
     <!-- CONTACT -->
-    <section class="contact py-5" id="contact">
+    <div class="section" id="contact">
+      <div class="section-title">
+          <h2>Contactez moi</h2>
+      </div>
+    </div>
+    <section class="contact py-5">
       <div class="container">
         <div class="row">
           
