@@ -17,7 +17,117 @@ body {
   padding: 8rem 0;
 }
 
+.section {
+  text-align: center; /* Centre le contenu horizontalement */
+  margin: 20px 0; /* Espacement entre les sections */
+}
 
+.section-title {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond transparent */
+  border: 2px solid black; /* Bordure avec la couleur de votre choix */
+  border-radius: 15px; /* Coins arrondis */
+  color: black; /* Couleur du texte */
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50vw; /* Largeur pour atteindre le bord de la page */
+    height: 2px; /* Hauteur du trait */
+    background-color: black ; /* Couleur du trait */
+}
+
+.section-title::before {
+    left: -50vw; /* Trait à gauche */
+}
+
+.section-title::after {
+    right: -50vw; /* Trait à droite */
+}
+
+
+
+
+
+
+.img-wrapper {
+  position: relative;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: block;
+  display: block;
+}
+
+.img-wrapper img {
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+
+.img-wrapper .overlay {
+  background: rgba(87, 146, 255, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.img-wrapper .overlay .overlay-infos {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  color: #fff;
+}
+
+.img-wrapper .overlay .overlay-infos h5 {
+  margin-bottom: 15px;
+}
+
+.img-wrapper .overlay .overlay-infos a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.img-wrapper .overlay .overlay-infos a:hover {
+  background: #fff;
+  color: #0080FF;
+}
+
+.img-wrapper:hover .overlay, .img-wrapper:active .overlay {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-wrapper:hover .overlay .overlay-infos, .img-wrapper:active .overlay .overlay-infos {
+  top: 50%;
+}
 
 .small-text {
   color: #5b5b5b;
@@ -67,7 +177,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: #0080FF !important;
 }
 
 .navbar-brand .uil {
@@ -127,14 +237,14 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #ffc200;
+  color: #0080FF;
 }
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
+  background: #0080FF;
   color: #ffffff !important;
 }
 
@@ -151,7 +261,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #0080FF;
 }
 
 .animated-item {
@@ -249,7 +359,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #0080FF;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -331,7 +441,7 @@ b, strong {
   color: rgba(255, 255, 255, 0.8);
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #0080FF;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
@@ -433,7 +543,7 @@ b, strong {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: #ffc200;
+  color: #0080FF;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -465,10 +575,10 @@ b, strong {
   height: 48px;
 }
 .contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
+  border-color: #0080FF;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
+  background: #0080FF;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -497,7 +607,7 @@ b, strong {
   margin: 5px 0;
 }
 .social-links .uil:hover {
-  color: #ffc200;
+  color: #0080FF;
 }
 
 @media (min-width: 1270px) {
@@ -650,7 +760,7 @@ b, strong {
 
 .freelance_section .tab_container .t-link-box .detail-box h5 {
   font-weight: bold;
-  color: #ff4f5a;
+  color: #0080FF;
 }
 
 .freelance_section .tab_container .t-link-box .detail-box h3 {
@@ -659,7 +769,7 @@ b, strong {
 }
 
 .freelance_section .tab_container .t-link-box[aria-expanded="true"] .img-box, .freelance_section .tab_container .t-link-box:hover .img-box {
-  background-color: #1cbbb4;
+  background-color: #0080FF;
 }
 
 .freelance_section .img-box img {
